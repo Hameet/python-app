@@ -24,3 +24,9 @@ def details(request, id):
         'todo': todo
     }
     return render(request, 'details.html', context)
+
+def add(request):
+    if(request.method == 'POST'):
+        return
+    else: 
+        return render(request, 'add.html')
